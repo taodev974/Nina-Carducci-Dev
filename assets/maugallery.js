@@ -256,13 +256,18 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
+
+      // Retire les classes actives
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+
+      // Ajoute les bonnes classes au bouton cliqué
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
       $(".gallery-item").each(function () {
         $(this).parents(".item-column").hide();
+
         if (tag === "all") {
           $(this).parents(".item-column").show(300);
         } else if ($(this).data("gallery-tag") === tag) {

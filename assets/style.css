@@ -287,6 +287,16 @@ input[type="submit"] {
   #about-me p {
     width: 100%;
   }
+  .instagram-section {
+    padding: 50px 20px;
+  }
+  .instagram-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+  }
+  .instagram-section h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media all and (max-width: 1000px) {
@@ -345,6 +355,13 @@ input[type="submit"] {
     right: 0;
     z-index: -1;
   }
+  .instagram-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+  }
+  .instagram-section h2 {
+    font-size: 1.6rem;
+  }
 }
 
 @media all and (max-width: 650px) {
@@ -387,6 +404,24 @@ input[type="submit"] {
   }
   .picture {
     width: 80%;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+  }
+
+  .instagram-section {
+    padding: 40px 15px;
+  }
+
+  .instagram-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .instagram-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }
 

@@ -37,6 +37,7 @@ body {
 .nav a {
   text-decoration: none;
   color: #000;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 .social-link img {
@@ -72,6 +73,7 @@ body {
 .picture img {
   width: 100%;
   border-radius: 8px;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
 }
 #about-me {
   flex: 2;
@@ -241,8 +243,7 @@ form {
 }
 
 form input,
-textarea,
-img {
+textarea {
   border-radius: 5px;
   filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
 }
@@ -468,6 +469,7 @@ input[type="submit"] {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.4));
 }
 
 .instagram-btn-wrapper {

@@ -107,27 +107,30 @@
   <body>
     <header>
       <div class="top-header">
-        <h1 class="name">Nina Carducci</h1>
-        <nav>
-          <div class="nav">
-            <ul>
-              <li><a href="#about">À propos</a></li>
-              <li><a href="#gallery">Galerie</a></li>
-              <li><a href="#services">Service</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li>
-                <a
-                  class="social-link"
-                  href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-                  target="_blank"
-                  ><img src="assets/images/instagram.png" alt="instagram"
-                /></a>
-              </li>
-            </ul>
-          </div>
+        <h1 class="name">
+          <a href="/">Nina Carducci</a>
+        </h1>
+        <nav aria-label="Navigation principale">
+          <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Galerie</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="social-link"
+                href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+                target="_blank"
+                rel="noopener"
+                ><img src="assets/images/instagram.png" alt="instagram" />
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
-      <div id="header">
+    </header>
+    <main>
+      <section class="hero">
         <div
           id="carouselExampleIndicators"
           class="carousel slide"
@@ -209,9 +212,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section id="about">
         <div class="picture left">
           <img
@@ -401,7 +402,14 @@
         </div>
 
         <div class="instagram-btn-wrapper">
-          <a href="#" class="instagram-btn">Voir plus sur Instagram</a>
+          <a
+            href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+            class="instagram-btn"
+            target="_blank"
+            rel="noopener"
+          >
+            Voir plus sur Instagram
+          </a>
         </div>
       </section>
       <section id="services">

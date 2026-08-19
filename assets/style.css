@@ -119,6 +119,17 @@ nav a:hover {
 .gallery nav {
   justify-content: center;
 }
+
+.nav {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  flex-direction: row;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: rgb(0, 0, 0, 1);
@@ -379,12 +390,12 @@ input[type="submit"] {
     flex-direction: column;
     padding-inline: 0;
   }
-  .top-header .nav,
-  .top-header navul {
+  .top-header nav,
+  .top-header nav ul {
     width: 100%;
     padding: 0 0 0 0;
   }
-  .top-header navli {
+  .top-header nav li {
     flex: 1;
     padding-block: 1em;
     text-align: center;
@@ -393,6 +404,29 @@ input[type="submit"] {
   .picture.right::before {
     height: 150px;
   }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    text-align: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gallery h2 {
+    padding: 15px 0;
+  }
+  #gallery {
+    padding: 8px 16px;
+    object-fit: contain;
+  }
+
   #services .container {
     align-items: center;
   }
@@ -432,6 +466,11 @@ input[type="submit"] {
   .instagram-btn {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
   }
 }
 

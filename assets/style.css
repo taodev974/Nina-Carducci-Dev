@@ -136,13 +136,23 @@ nav a:hover {
   background-color: #beb45a;
   border-radius: 6px;
   z-index: 6;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+  border: #bdb261 1px solid;
 }
 .nav-pills .nav-link {
   color: #000;
   cursor: pointer;
-  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.3));
+  border-radius: 6px;
+  border: #beb45a 1px solid;
+  background-color: #d8d3a8;
 }
+
+.nav-pills {
+  display: flex;
+  gap: 1em;
+}
+
 .item-column {
   position: relative;
   margin-bottom: 0 !important;
@@ -564,8 +574,9 @@ input[type="submit"] {
 .instagram-btn {
   display: inline-block;
   padding: 12px 25px;
-  background-color: #000;
-  color: #eee;
+  background-color: #d8d3a8;
+  color: #000;
+  border: #bdb261 1px solid;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 300;
